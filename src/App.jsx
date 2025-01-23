@@ -1,11 +1,13 @@
 import './App.css'
+import FormSearch from './components/FormSearch';
+import Movies from './components/Movies';
 
 function App() {
-//http://www.omdbapi.com/?apikey=9194b005&s=troya
   return (
-    <>
-      
-    </>
+    <div className='App'>
+      <FormSearch />
+      <Movies />
+    </div>
   )
 }
 
