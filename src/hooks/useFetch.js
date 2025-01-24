@@ -19,7 +19,7 @@ export const useFetch = (params) => {
                     setError(true);
                 }
                 setIsLoading(false);
-                console.log("data: ", resJson);
+                //console.log("data: ", resJson);
             })
             .catch(err => {console.log(err)})
     }
