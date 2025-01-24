@@ -1,12 +1,15 @@
 import './App.css'
-import FormSearch from './components/FormSearch';
-import Movies from './components/Movies';
+import MainPage from './components/MainPage';
+import { Route, Routes } from 'react-router-dom';
+import SingleMovie from './components/SingleMovie';
 
 function App() {
   return (
     <div className='App'>
-      <FormSearch />
-      <Movies />
+      <Routes>
+        <Route path='/' element={<MainPage />} />
+        <Route path='/movies/:id' element={<SingleMovie />} />
+      </Routes>
     </div>
   )
 }
